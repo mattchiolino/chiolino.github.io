@@ -10117,6 +10117,8 @@ header.masthead .display-1 {
   padding: 4px;
   z-index: 4;
   box-sizing: content-box;
+  border-radius: 100px;
+  box-shadow: 0 0 10px 4px #fff;
 }
 
 .bounce {
