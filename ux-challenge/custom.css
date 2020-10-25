@@ -13473,6 +13473,9 @@ section {
   float: right;
   clear: both;
 }
+.modal-panel .modal-footer .form-group {
+  width: 100px;
+}
 
 .modal.fade .modal-dialog.modal-panel {
   -webkit-transform: translate(100%, 0) scale(1);

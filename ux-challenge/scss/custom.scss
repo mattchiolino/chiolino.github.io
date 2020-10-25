@@ -311,6 +311,13 @@ section {
             clear: both;
         }
     }
+
+    .modal-footer {
+
+        .form-group {
+            width: 100px;
+        }
+    }
 }
 
 .modal.fade .modal-dialog.modal-panel {

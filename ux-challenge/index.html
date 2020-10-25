@@ -167,8 +167,8 @@
                                     </a>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="https://images.unsplash.com/photo-1601319795014-da0a132b6d9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" class="img-fluid mb-3"
-                                        alt="placeholder">
+                                    <img src="https://images.unsplash.com/photo-1601319795014-da0a132b6d9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                                        class="img-fluid mb-3" alt="placeholder">
                                     <div class="text-right clearfix">
                                         <h4><span class="text-text mr-3">Sell Price</span><span
                                                 class="text-primary">Cost</span></h4>
@@ -181,27 +181,45 @@
                                                 value="Combined Locks">
                                         </div>
                                     </div>
-                                    <ul class="nav">
+                                    <ul class="nav" id="productTabs" role="tablist">
                                         <li class="nav-item">
-                                          <a class="nav-link active" href="#">Product Information</a>
+                                            <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info"
+                                                role="tab" aria-controls="info" aria-selected="true">Product
+                                                Information</a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" href="#">Interchange</a>
+                                            <a class="nav-link" id="interchange-tab" data-toggle="tab"
+                                                href="#interchange" role="tab" aria-controls="interchange"
+                                                aria-selected="false">Interchange</a>
                                         </li>
                                         <li class="nav-item">
-                                          <a class="nav-link" href="#">Buyer's Guide</a>
+                                            <a class="nav-link" id="buyers-tab" data-toggle="tab" href="#buyers"
+                                                role="tab" aria-controls="buyers" aria-selected="false">Buyer's
+                                                Guide</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Related Parts</a>
-                                          </li>
-                                      </ul>
-                                </div>
-                                <div class="modal-footer d-flex justify-content-space-between">
-                                    <div class="modal-footer-left">
-                                        <button class="btn btn-link">Close</button>
+                                            <a class="nav-link" id="related-tab" data-toggle="tab" href="#related"
+                                                role="tab" aria-controls="related" aria-selected="false">Related
+                                                Parts</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content my-3" id="productTabsContent">
+                                        <div class="tab-pane fade show active" id="info" role="tabpanel"
+                                            aria-labelledby="info-tab">Bacon ipsum dolor amet tongue sausage cow filet mignon pork chop leberkas beef ribs pig chislic frankfurter corned beef pork belly jerky ground round short loin. Tri-tip bacon cow meatloaf, shoulder ham chuck jowl ham hock.</div>
+                                        <div class="tab-pane fade" id="interchange" role="tabpanel"
+                                            aria-labelledby="interchange-tab">Tenderloin ground round strip steak jerky shank alcatra, beef ribs landjaeger salami corned beef pork chop bresaola. Flank ball tip filet mignon venison jowl ground round tenderloin andouille.</div>
+                                        <div class="tab-pane fade" id="buyers" role="tabpanel"
+                                            aria-labelledby="buyers-tab">Beef ribs ribeye prosciutto beef venison, chuck ball tip alcatra pork loin kielbasa pork chop corned beef filet mignon landjaeger.</div>
+                                        <div class="tab-pane fade" id="related" role="tabpanel"
+                                            aria-labelledby="related-tab">Spare ribs short loin capicola t-bone cupim. Strip steak chuck meatloaf jowl. Andouille turducken pork chop, meatloaf swine ribeye biltong short ribs ball tip bresaola tri-tip sirloin.</div>
                                     </div>
-                                    <div class="modal-footer-right d-flex">
-                                        <div class="form-group mr-3">
+                                </div>
+                                <div class="modal-footer d-flex justify-content-between">
+                                    <div class="modal-footer-left">
+                                        <button class="btn btn-link close" data-dismiss="modal" aria-label="Close">Close</button>
+                                    </div>
+                                    <div class="modal-footer-right d-flex align-items-center">
+                                        <div class="form-group mr-3 mb-0">
                                             <label for="usr">Qty</label>
                                             <input value="1" type="number" class="form-control" id="password">
                                         </div>
